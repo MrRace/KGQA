@@ -1,4 +1,4 @@
-from py2neo import Graph, Node, Relationship,NodeSelector
+from py2neo import Graph, Node, Relationship,NodeMatcher
 from config import graph
 
 with open("./raw_data/relation.txt") as f:

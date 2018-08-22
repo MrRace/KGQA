@@ -2,7 +2,7 @@ from py2neo import Graph
 graph = Graph(
     "http://localhost:7474",
     username="neo4j",
-    password="950302"
+    password="neo4j"
 )
 CA_LIST = {"贾家荣国府":0,"贾家宁国府":1,"王家":2,"史家":3,"薛家":4,"其他":5,"林家":6}
 similar_words = {

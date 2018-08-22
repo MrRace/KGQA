@@ -1,7 +1,9 @@
-# KGQA_HLM
-基于知识图谱的《红楼梦》人物关系可视化及问答系统
+# KGQA
 
-* 详情请见[http://chizhunlp.com](http://111.230.92.110/)
+## 1-基于知识图谱的《红楼梦》人物关系可视化及问答系统
+
+## 2-基于知识图谱的《火影忍者》人物关系可视化及其问答
+
 
 1)  app.py是整个系统的主入口<br>
 2)  templates文件夹是HTML的页面<br>
@@ -21,6 +23,11 @@
      |- get_*.py 是之前爬取人物资料的代码，已经产生好images和json 可以不用再执行<br>
      |-show_profile.py 是调用人物资料和图谱展示在前端的代码
 <hr>
+
+环境依赖：<br>
+neo4j-community-3.4.6<br>
+py2neo 4.0<br>
+pyltp采用源码安装。[安装指导](https://pyltp.readthedocs.io/zh_CN/latest/install.html)<br>
 
 部署步骤：<br>
 * 0.安装所需的库 执行pip -r requirement.txt<br>

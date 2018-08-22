@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pyltp 
 import os
-LTP_DATA_DIR = '/Users/chizhu/data/ltp_data_v3.4.0'  # ltp模型目录的路径
+LTP_DATA_DIR = '/data/liujiepeng/KG/pyltp/model/ltp_data_v3.4.0'  # ltp模型目录的路径
 
 
 def cut_words(words):
