@@ -44,8 +44,8 @@ pyltp采用源码安装。[安装指导](https://pyltp.readthedocs.io/zh_CN/late
     从搜狗那里爬取火影忍者的角色名单，作为实体集合。由于是尝试性实验，所以只是采用了少部分主角，合计大概29个。<br>
 ### 2-2 关系爬取<br>
     由于搜狗网页已经带有人物关系信息，所以在角色名单的边界确定之后，直接对各个角色的人物关系进行爬取，并做去重。
-    得到最后的关系文件naruto_relation.txt和各个角色的详细信息name_id_detail.txt<br>
+    得到最后的关系文件naruto_relation.txt和各个角色的详细信息name_id_detail.txt
 ### 2-3 图谱构建<br>
-    基于上述的naruto_relation.txt和name_id_detail.txt在neo4j中构建人物图谱关系<br>
-    构建的效果图如下：<br>
-    ![火影人物关系图谱](火影忍者.PNG)
+    基于上述的naruto_relation.txt和name_id_detail.txt在neo4j中构建人物图谱关系
+    构建的效果图如下：
+![火影人物关系图谱](火影忍者.PNG)
