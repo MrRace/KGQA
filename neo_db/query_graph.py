@@ -6,11 +6,11 @@ import json
 import base64
 
 def query(name):
-    data = graph.run(
-    "match(p )-[r]->(n:Person{Name:'%s'}) return  p.Name,r.relation,n.Name,p.cate,n.cate\
-        Union all\
-    match(p:Person {Name:'%s'}) -[r]->(n) return p.Name, r.relation, n.Name, p.cate, n.cate" % (name,name)
-    )
+    my_query = "match(p)-[r]->(n:Person{Name:'%s'}) return  p.Name,r.relation,n.Name,p.cate,n.cate\
+    Union all\
+    match(p:Person {Name:'%s'})-[r]->(n) return p.Name, r.relation, n.Name, p.cate, n.cate" % (name, name)
+    data = graph.run(my_query)
+    print(type(data))
     data = list(data)
     return get_json_data(data)
 def get_json_data(data):
